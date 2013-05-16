@@ -106,12 +106,97 @@ print "Partition output:"
 for item in partition_list:
 	print item
 
+print "-"*10
+print "-"*10
+
+#what if the delimiter doesn't occur within the string?
+split_list = rhyme.split('happiness', 1)
+print "List output:"
+for item in split_list:
+	print item
+
+partition_list = rhyme.partition('happiness')
+print "Partition output:"
+for item in partition_list:
+	print item
+
+print "-"*10
+print "-"*10
+
+#split() handles this in a non elegant way
+#partition does a better job
+
+# if rhyme.split('happiness')[1]:
+# else:
+
+# if rhyme.partition('happiness')[2]:
+# else:
+
+#######
+#join()
+#######
+
+broken = ['hu', 'm', 'pty', ' du', 'mpty']
+all_the_kings_horses = 'n~n*^'
+all_the_kings_men    = '>+O'
+first_try = all_the_kings_horses.join(broken)
+second_try = all_the_kings_men.join(broken)
+if (first_try == 'humpty dumpty') or (second_try == 'humpty dumpty'):
+	print "hooray!"
+else:
+	print '''All the king's horses and all the king's men couldn't put 
+	Humpty together again'''
+
+print "-"*10
+print "-"*10
+
+third_try = ''.join(broken)
+print third_try
+
+#when using join you do not need to declare the seperate variables to
+# act as glue
+
+fairy_tail_characters = ['witch', 'rapunzel', 'prince']
+plot = 'hair'.join(fairy_tail_characters)
+print plot
+
+#testing startswith(), endswith(), and find()
 
 
 
-#######START HERE#######
-####SEARCH ON WEBSITE#####
-#What if the delimiter doesn't occur within the string?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
