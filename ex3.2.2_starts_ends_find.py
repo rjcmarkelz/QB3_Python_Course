@@ -21,6 +21,76 @@ else:
 	pass
 
 
-####START AT BEATLES EXAMPLE#####
-#beatles = "johnpaulgeorgeandringo"
- 
+
+beatles = "johnpaulgeorgeandringo"
+#be careful when using an if statement with find
+#it finds the indexed number
+if ( beatles.find('paul')):
+	print "At least we've got a bassist."
+else:
+	print "Anyone here play bass?"
+
+if not (beatles.find('paul') == -1):
+	print "At least we've got a bassest."
+else:
+	print "Well, I guess we're a three piece."
+
+#text conversions
+beatles = "johnpaulgeorgeandringo"
+beatles = beatles.replace('george', 'JUSTIN')
+print beatles
+
+beatles = beatles + "MOREJUSTIN!"
+print beatles.replace("JUSTIN", "DIANNA!")
+print beatles
+
+#you can also tell where to replace
+print beatles.replace("JUSTIN", "DIANNA!", 1)
+print beatles
+
+#replace does not change the string in place
+#if you want this new assignment to stay then a new variable needs
+# to be assigned
+
+
+#playing with string cases
+blast_hit = 'ATATATATATGGGCTCTCTATCGCTCGaaaatttgggtttcccAATTTAAAA'
+
+#upper
+if (blast_hit.isupper()):
+	pass
+else:
+	blast_hit = blast_hit.upper()
+	print blast_hit
+
+#lower
+blast_hit = blast_hit.lower()
+print blast_hit
+
+#swapcase
+blast_hit =blast_hit.swapcase()
+print blast_hit
+
+#or to make sure there are only letters
+if (blast_hit.isalpha()):
+	print "we have all letters here"
+else:
+	print "something is up with our sequence data"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
