@@ -130,9 +130,5 @@ print "Hurray! We have the outline of a paper generator function!"
 print
 print
 
-#################
-#start at modules
-#################
-
 
 
